@@ -5,7 +5,7 @@
 
 <svelte:head>
 	<title>{SITE_NAME} - {SITE_TITLE}</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="In this drugstore w'll find all kinds of Hackers pill's: web, cracking, networking, cryptanalysis, osint and more... " />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin&display=swap" rel="stylesheet">

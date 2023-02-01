@@ -1,0 +1,42 @@
+{
+    "name": "THE ORANGE TEAM PILL'S",
+    "image": "ipfs://bafybeihmckgdbpis2ccr66j2m2uqqvuyc46lbbz5ck7gbgvedo4axc4tiu/3.png", 
+    "description": "The Orange pill grants proficiency in wireless hacking and penetration testing", 
+    "attributes": [
+        {
+            "display_type": "boost_percentage", 
+            "trait_type": "Web Server", 
+            "value": 40
+        }, 
+        {
+            "display_type": "boost_percentage", 
+            "trait_type": "Web Client", 
+            "value": 40
+        },
+        {
+            "display_type": "boost_percentage", 
+            "trait_type": "Cryptanalysis", 
+            "value": 40
+        }, 
+        {
+            "display_type": "boost_percentage", 
+            "trait_type": "Cracking", 
+            "value": 40
+        },
+        {
+            "display_type": "boost_percentage", 
+            "trait_type": "App Script", 
+            "value": 40
+        }, 
+        {
+            "display_type": "boost_percentage", 
+            "trait_type": "Networking", 
+            "value": 40
+        }, 
+        {
+            "display_type": "boost_percentage", 
+            "trait_type": "OSINT", 
+            "value": 40
+        }
+    ]
+}

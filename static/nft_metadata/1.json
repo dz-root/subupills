@@ -1,0 +1,42 @@
+{
+    "name": "THE RED TEAM PILL'S",
+    "image": "ipfs://bafybeihmckgdbpis2ccr66j2m2uqqvuyc46lbbz5ck7gbgvedo4axc4tiu/1.png", 
+    "description": "The Purpel pill would gives the user advanced knowledge of web application security", 
+    "attributes": [
+        {
+            "display_type": "boost_percentage", 
+            "trait_type": "Web Server", 
+            "value": 65
+        }, 
+        {
+            "display_type": "boost_percentage", 
+            "trait_type": "Web Client", 
+            "value": 55
+        },
+        {
+            "display_type": "boost_percentage", 
+            "trait_type": "Cryptanalysis", 
+            "value": 40
+        }, 
+        {
+            "display_type": "boost_percentage", 
+            "trait_type": "Cracking", 
+            "value": 10
+        },
+        {
+            "display_type": "boost_percentage", 
+            "trait_type": "App Script", 
+            "value": 10
+        }, 
+        {
+            "display_type": "boost_percentage", 
+            "trait_type": "Networking", 
+            "value": 25
+        }, 
+        {
+            "display_type": "boost_percentage", 
+            "trait_type": "OSINT", 
+            "value": 40
+        }
+    ]
+}

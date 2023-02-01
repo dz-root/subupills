@@ -1,0 +1,42 @@
+{
+    "name": "THE RED TEAM PILL'S",
+    "image": "ipfs://bafybeihmckgdbpis2ccr66j2m2uqqvuyc46lbbz5ck7gbgvedo4axc4tiu/2.png", 
+    "description": "It was rumored that taking the red pill would grant the user unparalleled hacking skills and knowledge.", 
+    "attributes": [
+        {
+            "display_type": "boost_percentage", 
+            "trait_type": "Web Server", 
+            "value": 40
+        }, 
+        {
+            "display_type": "boost_percentage", 
+            "trait_type": "Web Client", 
+            "value": 60
+        },
+        {
+            "display_type": "boost_percentage", 
+            "trait_type": "Cryptanalysis", 
+            "value": 50
+        }, 
+        {
+            "display_type": "boost_percentage", 
+            "trait_type": "Cracking", 
+            "value": 20
+        },
+        {
+            "display_type": "boost_percentage", 
+            "trait_type": "App Script", 
+            "value": 15
+        }, 
+        {
+            "display_type": "boost_percentage", 
+            "trait_type": "Networking", 
+            "value": 30
+        }, 
+        {
+            "display_type": "boost_percentage", 
+            "trait_type": "OSINT", 
+            "value": 15
+        }
+    ]
+}
