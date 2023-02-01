@@ -1,42 +1,42 @@
 {
-    "name": "THE CAYAN NINJA TEAM PILL'S",
-    "image": "ipfs://bafybeihmckgdbpis2ccr66j2m2uqqvuyc46lbbz5ck7gbgvedo4axc4tiu/17.png", 
-    "description": "Only for Samourais", 
+    "name": "THE GREEN NINJA TEAM PILL'S",
+    "image": "ipfs://bafybeihmckgdbpis2ccr66j2m2uqqvuyc46lbbz5ck7gbgvedo4axc4tiu/14.png", 
+    "description": "Only for Ninjas", 
     "attributes": [
         {
             "display_type": "boost_percentage", 
             "trait_type": "Web Server", 
-            "value": 95
+            "value": 60
         }, 
         {
             "display_type": "boost_percentage", 
             "trait_type": "Web Client", 
-            "value": 100
+            "value": 60
         },
         {
             "display_type": "boost_percentage", 
             "trait_type": "Cryptanalysis", 
-            "value": 100
-        }, 
-        {
-            "display_type": "boost_percentage", 
-            "trait_type": "Cracking", 
-            "value": 85
-        },
-        {
-            "display_type": "boost_percentage", 
-            "trait_type": "App Script", 
             "value": 95
         }, 
         {
             "display_type": "boost_percentage", 
+            "trait_type": "Cracking", 
+            "value": 75
+        },
+        {
+            "display_type": "boost_percentage", 
+            "trait_type": "App Script", 
+            "value": 60
+        }, 
+        {
+            "display_type": "boost_percentage", 
             "trait_type": "Networking", 
-            "value": 85
+            "value": 50
         }, 
         {
             "display_type": "boost_percentage", 
             "trait_type": "OSINT", 
-            "value": 80
+            "value": 30
         }
     ]
 }

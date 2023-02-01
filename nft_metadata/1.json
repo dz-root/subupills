@@ -1,42 +1,42 @@
 {
-    "name": "THE GREEN TEAM PILL'S",
-    "image": "ipfs://bafybeihmckgdbpis2ccr66j2m2uqqvuyc46lbbz5ck7gbgvedo4axc4tiu/14.png", 
-    "description": "Only for Ninjas", 
+    "name": "THE PURPEL TEAM PILL'S",
+    "image": "ipfs://bafybeihmckgdbpis2ccr66j2m2uqqvuyc46lbbz5ck7gbgvedo4axc4tiu/1.png", 
+    "description": "The Purpel pill would gives the user advanced knowledge of web application security", 
     "attributes": [
         {
             "display_type": "boost_percentage", 
             "trait_type": "Web Server", 
-            "value": 60
+            "value": 65
         }, 
         {
             "display_type": "boost_percentage", 
             "trait_type": "Web Client", 
-            "value": 60
+            "value": 55
         },
         {
             "display_type": "boost_percentage", 
             "trait_type": "Cryptanalysis", 
-            "value": 95
+            "value": 40
         }, 
         {
             "display_type": "boost_percentage", 
             "trait_type": "Cracking", 
-            "value": 75
+            "value": 10
         },
         {
             "display_type": "boost_percentage", 
             "trait_type": "App Script", 
-            "value": 60
+            "value": 10
         }, 
         {
             "display_type": "boost_percentage", 
             "trait_type": "Networking", 
-            "value": 50
+            "value": 25
         }, 
         {
             "display_type": "boost_percentage", 
             "trait_type": "OSINT", 
-            "value": 30
+            "value": 40
         }
     ]
 }

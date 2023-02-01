@@ -1,42 +1,42 @@
 {
-    "name": "THE RED TEAM PILL'S",
-    "image": "ipfs://bafybeihmckgdbpis2ccr66j2m2uqqvuyc46lbbz5ck7gbgvedo4axc4tiu/2.png", 
-    "description": "It was rumored that taking the red pill would grant the user unparalleled hacking skills and knowledge.", 
+    "name": "THE BLACK BLACK NINJA TEAM PILL'S",
+    "image": "ipfs://bafybeihmckgdbpis2ccr66j2m2uqqvuyc46lbbz5ck7gbgvedo4axc4tiu/17.png", 
+    "description": "Only for Samourais", 
     "attributes": [
         {
             "display_type": "boost_percentage", 
             "trait_type": "Web Server", 
-            "value": 40
+            "value": 95
         }, 
         {
             "display_type": "boost_percentage", 
             "trait_type": "Web Client", 
-            "value": 60
+            "value": 100
         },
         {
             "display_type": "boost_percentage", 
             "trait_type": "Cryptanalysis", 
-            "value": 50
+            "value": 100
         }, 
         {
             "display_type": "boost_percentage", 
             "trait_type": "Cracking", 
-            "value": 20
+            "value": 85
         },
         {
             "display_type": "boost_percentage", 
             "trait_type": "App Script", 
-            "value": 15
+            "value": 95
         }, 
         {
             "display_type": "boost_percentage", 
             "trait_type": "Networking", 
-            "value": 30
+            "value": 85
         }, 
         {
             "display_type": "boost_percentage", 
             "trait_type": "OSINT", 
-            "value": 15
+            "value": 80
         }
     ]
 }
