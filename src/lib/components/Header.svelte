@@ -42,7 +42,7 @@
 
 <header class="w-full flex fixed items-center justify-center shadow-indigo-900/30 shadow-2xl bg-primary/95 z-10">
 	<div class="w-11/12 md:w-8/12 flex items-center justify-between py-4">
-		<div class="logo text-lg font-semibold">
+		<a href="/" class="logo text-lg font-semibold">
 			☠️ {SITE_NAME} 
 		</div>
 		<div class="flex items-center">
@@ -78,8 +78,8 @@
 	<div class="flex h-full flex-col justify-between">
 	
 		<ul class="">
-			<li class="p-1 hover:pl-3 hover:text-indigo-600 ease-in-out duration-150"><a href="" class="code">White paper</a></li>
-			<li class="p-1 hover:pl-3 hover:text-indigo-600 ease-in-out duration-150"><a href="" class="code">F.A.Q</a></li>
+			<li class="p-1 hover:pl-3 hover:text-indigo-600 ease-in-out duration-150"><a href="/white-paper" class="code">White paper</a></li>
+			<li class="p-1 hover:pl-3 hover:text-indigo-600 ease-in-out duration-150"><a href="/faq" class="code">F.A.Q</a></li>
 		</ul>
 
 		<div>
