@@ -1,16 +1,16 @@
 <script>
 	import { onMount } from 'svelte'
-	import { userState } from '../../stores/userstate';
+	import { userState , userProfil} from '../../stores/userstate';
 	import {SITE_NAME} from '$lib/config.js'
 	import { Drawer } from 'flowbite';
 	import {web3Init, connect, account, ethBalance} from '$lib/web3init';
+
 
 	let drawer =''
 
 	onMount(async ()=>{
 
 		web3Init()
-
 		const targetEl = document.getElementById('drawer-js-example');
 		const options = {
 			placement: 'right',
@@ -22,6 +22,7 @@
 		};
 		drawer = new Drawer(targetEl, options)
 		drawer.hide();
+
 	})
 	
 </script>
@@ -29,7 +30,7 @@
 <header class="w-full flex fixed items-center justify-center shadow-indigo-900/30 shadow-2xl bg-primary/95 z-10">
 	<div class="w-11/12 md:w-8/12 flex items-center justify-between py-4">
 		<a href="/" class="logo text-lg font-semibold">
-			☠️ {SITE_NAME} 
+			☠️ {SITE_NAME}
 		</div>
 		<div class="flex items-center">
 			{#if $userState}
@@ -62,7 +63,10 @@
 	   <span class="sr-only">Close menu</span>
 	</button>
 	<div class="flex h-full flex-col justify-between">
-	
+		<div class="flex items-center">
+			<img src="{$userProfil.image}" class="w-10 h-10 border-2 border-indigo-800 rounded-full" />
+			<div class="ml-2">{$userProfil.name}</div>
+		</div>
 		<ul class="">
 			<li class="p-1 hover:pl-3 hover:text-indigo-600 ease-in-out duration-150"><a href="/white-paper" class="code">White paper</a></li>
 			<li class="p-1 hover:pl-3 hover:text-indigo-600 ease-in-out duration-150"><a href="/faq" class="code">F.A.Q</a></li>
