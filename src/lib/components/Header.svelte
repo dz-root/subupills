@@ -1,28 +1,15 @@
 <script>
 	import { onMount } from 'svelte'
-	import Web3 from 'web3'
 	import { userState } from '../../stores/userstate';
 	import {SITE_NAME} from '$lib/config.js'
 	import { Drawer } from 'flowbite';
+	import {web3Init, connect, account, ethBalance} from '$lib/web3init';
 
 	let drawer =''
-	let web3 = null
-	let account = ''
-	let ethBalance = ''
-	let connect =()=>{}
 
 	onMount(async ()=>{
 
-		web3 = new Web3(Web3.givenProvider)
-		connect =()=>{
-			ethereum.request({ method: "eth_requestAccounts" }).then((accounts)=>{
-				account = accounts[0]	
-				userState.set(true)
-				web3.eth.getBalance(account).then((wei)=>{
-					ethBalance = web3.utils.fromWei(wei, 'ether')
-				})
-			})
-		}
+		web3Init()
 
 		const targetEl = document.getElementById('drawer-js-example');
 		const options = {
@@ -35,7 +22,6 @@
 		};
 		drawer = new Drawer(targetEl, options)
 		drawer.hide();
-
 	})
 	
 </script>

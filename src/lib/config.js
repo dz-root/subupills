@@ -5,6 +5,7 @@ export const SITE_DESC = "Once upon a time, in a world not too different from ou
 
 /* Blockchain settings */
 export const CHAIN_ID = '0x0'
+export const CONTRACT_ADDR = '0x394a96C21edF93250cc4357ea813eE074b1adCE0'
 export const RECEIVER_ADDR = '0x0000000000000000000000000000000000000000'
 
 /* NFTs list*/
