@@ -27,44 +27,20 @@ async function getOrAddProfile(){
     }
 }
 
-export function web3Init(){    
-    try{
-        ethereum.request({ method: "eth_requestAccounts" }).then((accounts)=>{
-            account = accounts[0]	
-            userState.set(true)
-            getOrAddProfile()
-        })
-    }catch(e){
-        alert(e)
-    }
-    
-    connect= ()=>{
-        ethereum.request({ method: "eth_requestAccounts" }).then((accounts)=>{
-            account = accounts[0]	
-            userState.set(true)
 
 
-            getOrAddProfile()
-        })
-        
-    }
-
+/**
+ * Try to connect to Metamask
+ */
+function loginMetamask(){
+    ethereum.request({ method: "eth_requestAccounts" }).then((accounts)=>{
+        account = accounts[0]	
+        userState.set(true)
+        getOrAddProfile()
+    })
 }
 
-export async function contractInteract(){
-    let subuPillsContract = new web3.eth.Contract(abi, CONTRACT_ADDR, {from: account})
-
-    await subuPillsContract.methods.name().call({from: account}).then((result)=>{
-        contractName = result
-        console.log('name: '+result)
-    })
-    
-    /*
-    subuPillsContract.methods.symbol().call({from: account}, function(error, result){
-            console.log('Symbol: '+result)
-    })
-    
-    subuPillsContract.methods.totalSupply().call({from: account}, function(error, result){
-            console.log('total: '+result)
-    })*/
+export function web3Init(){    
+    try{ loginMetamask() }catch(e){ console.log(e) }
+    connect= ()=> loginMetamask()
 }

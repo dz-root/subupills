@@ -1,15 +1,7 @@
 <script>
 	import { onMount } from 'svelte'
 	import { SITE_NAME } from '$lib/config';
-	import {web3Init, contractName} from '$lib/web3init';
-	import {contractInteract} from '$lib/web3init';
-
-	onMount(async ()=>{
-		web3Init()
-		contractInteract()
-
-	})
-
+	import {web3Init} from '$lib/web3init';
 </script>
 
 <svelte:head>

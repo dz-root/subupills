@@ -35,18 +35,18 @@
 		</a>
 		<div class="flex items-center">
 
+			{#if $userState}
+			<span class="flex relative h-3 w-3 mr-2">
+				<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+				<span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+			</span>
+			{account.substr(0,6)}...{account.substr(-4)}
+			{:else}
 			<button class="hidden md:flex items-center bg-indigo-900 px-4 py-2 rounded-md" on:click={()=> connect()}>
-				{#if $userState}
-					<span class="flex relative h-3 w-3 mr-2">
-						<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-						<span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
-					</span>
-					{account.substr(0,6)}...{account.substr(-4)}
-				{:else}
 					<img src="./Metamask.svg" class="w-6 h-6 mr-2" alt="">
 					Connect to MetaMask
+				</button>
 				{/if}
-			</button>
 			<button class="flex items-center border border-indigo-900 px-4 py-2 ml-4 rounded-md" on:click={()=>drawer.show()}>
 				<svg class="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 					<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
@@ -64,14 +64,14 @@
 	<div class="flex h-full flex-col justify-between">
 		<div class="flex items-center">
 			<img src="{$userProfil.image}" class="w-10 h-10 border-2 border-indigo-800 rounded-full" />
-			<a href="/profile" class="ml-2">{$userProfil.name}</a>
+			<a href="/profile" class="ml-2" on:click={()=>drawer.hide()}>{$userProfil.name}</a>
 		</div>
 		<ul class="">
 			<li class="p-1 hover:pl-3 hover:text-indigo-600 ease-in-out duration-150">
-				<a href="/white-paper" class="code" class:text-indigo-600="{$page.url.pathname  == "/white-paper"}">White paper</a>
+				<a href="/white-paper" class="code" class:text-indigo-600="{$page.url.pathname  == "/white-paper"}"  on:click={()=>drawer.hide()}>White paper</a>
 			</li>
 			<li class="p-1 hover:pl-3 hover:text-indigo-600 ease-in-out duration-150">
-				<a href="/faq" class="code" class:text-indigo-600="{$page.url.pathname  == "/faq"}">F.A.Q</a>
+				<a href="/faq" class="code" class:text-indigo-600="{$page.url.pathname  == "/faq"}"  on:click={()=>drawer.hide()}>F.A.Q</a>
 			</li>
 		</ul>
 
