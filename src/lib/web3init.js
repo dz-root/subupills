@@ -7,7 +7,6 @@ import { abi } from '$lib/abi';
 
 export let connect = ()=>{}
 export let account = ''
-export let ethBalance = ''
 export let contractName = ''
 let web3 = new Web3(Web3.givenProvider)
 
@@ -19,6 +18,7 @@ let web3 = new Web3(Web3.givenProvider)
  * */ 
 async function getOrAddProfile(){
     const Profil = await supabase.from('profiles').select('name, address, image').eq('address', account)
+
     if(Profil.data.length ==0){
         let user = 'User_'+ Math.floor(Math.random() * 999999);
         const newProfil = await supabase.from('profiles').insert({name:user, address: account})
@@ -28,14 +28,21 @@ async function getOrAddProfile(){
 }
 
 export function web3Init(){    
+    try{
+        ethereum.request({ method: "eth_requestAccounts" }).then((accounts)=>{
+            account = accounts[0]	
+            userState.set(true)
+            getOrAddProfile()
+        })
+    }catch(e){
+        alert(e)
+    }
+    
     connect= ()=>{
         ethereum.request({ method: "eth_requestAccounts" }).then((accounts)=>{
             account = accounts[0]	
             userState.set(true)
 
-            web3.eth.getBalance(account).then((wei)=>{
-                ethBalance = web3.utils.fromWei(wei, 'ether')
-            })
 
             getOrAddProfile()
         })

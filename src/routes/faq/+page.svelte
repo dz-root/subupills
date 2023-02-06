@@ -28,7 +28,7 @@
 	<p class="w-10/12 md:w-4/12 text-center mt-5 text-lg code">Frequently Asked Questions</p>
 </div>
 <section class="w-11/12 md:w-8/12 mt-16" style="min-height:400px">	
-	<div class="w-full grid grid-cols-2 gap-4">
+	<div class="w-full grid md:grid-cols-2 gap-4">
 		<div></div>
 
 		<div>

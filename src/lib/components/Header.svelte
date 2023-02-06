@@ -4,7 +4,7 @@
 	import { userState , userProfil} from '../../stores/userstate';
 	import {SITE_NAME} from '$lib/config.js'
 	import { Drawer } from 'flowbite';
-	import {web3Init, connect, account, ethBalance} from '$lib/web3init';
+	import {web3Init, connect, account} from '$lib/web3init';
 
 	let drawer =''
 
@@ -34,9 +34,7 @@
 			☠️ {SITE_NAME}
 		</a>
 		<div class="flex items-center">
-			{#if $userState}
-				<p class="mr-2">{ethBalance.substr(0,6)}<span class="text-sm font-bold ml-1">ETH</span></p>
-			{/if}
+
 			<button class="hidden md:flex items-center bg-indigo-900 px-4 py-2 rounded-md" on:click={()=> connect()}>
 				{#if $userState}
 					<span class="flex relative h-3 w-3 mr-2">
@@ -66,7 +64,7 @@
 	<div class="flex h-full flex-col justify-between">
 		<div class="flex items-center">
 			<img src="{$userProfil.image}" class="w-10 h-10 border-2 border-indigo-800 rounded-full" />
-			<div class="ml-2">{$userProfil.name}</div>
+			<a href="/profile" class="ml-2">{$userProfil.name}</a>
 		</div>
 		<ul class="">
 			<li class="p-1 hover:pl-3 hover:text-indigo-600 ease-in-out duration-150">
